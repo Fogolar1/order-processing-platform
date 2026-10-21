@@ -1,0 +1,1 @@
+CREATE TABLE orders (id UUID PRIMARY KEY, product_id VARCHAR(120) NOT NULL, quantity INTEGER NOT NULL CHECK (quantity > 0), amount NUMERIC(12,2) NOT NULL CHECK (amount > 0), status VARCHAR(40) NOT NULL, created_at TIMESTAMP NOT NULL);
